@@ -65,6 +65,7 @@ install_requires = [
     'pyjwt>=1.5.0',
     'requests-oauthlib>=1.1.0,<1.2.0',
     'WTForms-Alchemy>=0.15.0',
+    'WTForms>=2.0.0,<3.0.0',
 ]
 
 packages = find_packages()
