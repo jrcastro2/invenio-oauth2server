@@ -16,7 +16,7 @@ readme = open('README.rst').read()
 history = open('CHANGES.rst').read()
 
 tests_require = [
-    'pytest-invenio>=1.4.0',
+    'pytest-invenio>=1.4.2',
 ]
 
 extras_require = {
@@ -30,13 +30,13 @@ extras_require = {
         'redis>=2.10.5',
     ],
     'mysql': [
-        'invenio-db[mysql,versioning]>=1.0.8',
+        'invenio-db[mysql,versioning]>=1.0.9,<2.0.0',
     ],
     'postgresql': [
-        'invenio-db[postgresql,versioning]>=1.0.8',
+        'invenio-db[postgresql,versioning]>=1.0.9,<2.0.0',
     ],
     'sqlite': [
-        'invenio-db[versioning]>=1.0.8',
+        'invenio-db[versioning]>=1.0.9,<2.0.0',
     ],
     'tests': tests_require,
 }
@@ -65,7 +65,7 @@ install_requires = [
     'pyjwt>=1.5.0',
     'requests-oauthlib>=1.1.0,<1.2.0',
     'WTForms-Alchemy>=0.15.0',
-    'WTForms>=2.0.0,<3.0.0',
+    'WTForms>=2.3.3,<3.0.0',
 ]
 
 packages = find_packages()
